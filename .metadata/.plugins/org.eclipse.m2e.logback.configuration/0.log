@@ -1,0 +1,9 @@
+2014-06-03 20:40:03,037 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+2014-06-03 20:40:03,059 [main] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:39453
+2014-06-03 21:49:40,833 [main] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/wse,null}
+2014-06-04 07:10:32,779 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+2014-06-04 07:10:32,919 [main] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:59179
+2014-06-04 07:15:42,526 [main] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/wse,null}
+2014-06-06 08:43:35,328 [main] INFO  org.eclipse.jetty.server.Server - jetty-8.1.14.v20131031
+2014-06-06 08:43:35,469 [main] INFO  o.e.jetty.server.AbstractConnector - Started SelectChannelConnector@0.0.0.0:37821
+2014-06-06 10:06:48,337 [main] INFO  o.e.j.server.handler.ContextHandler - stopped o.e.j.s.ServletContextHandler{/wse,null}

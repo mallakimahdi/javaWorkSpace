@@ -1,0 +1,9 @@
+package spring;
+
+public class personelDao 
+{
+	public void save(Object obj)
+	{
+		System.out.println("saving object "+ obj);
+	}
+}

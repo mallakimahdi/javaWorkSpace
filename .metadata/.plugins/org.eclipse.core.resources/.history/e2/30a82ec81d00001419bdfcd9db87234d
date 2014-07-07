@@ -1,0 +1,31 @@
+package spring;
+
+import java.util.List;
+
+public class testInjection 
+{
+	private String name;
+	private List tels;
+	private personelDao dao;
+	
+	public List getTels() {
+		return tels;
+	}
+
+	public void setTels(List tels) {
+		this.tels = tels;
+	}
+
+	public testInjection() 
+	{
+		setName("mahdi");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+}

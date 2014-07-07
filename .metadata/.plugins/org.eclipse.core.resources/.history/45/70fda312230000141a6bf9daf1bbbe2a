@@ -1,0 +1,12 @@
+package spring;
+
+public class personelDao 
+{
+	private String address;
+	private int code;
+	
+	public void save(Object obj)
+	{
+		System.out.println("saving object "+ obj);
+	}
+}

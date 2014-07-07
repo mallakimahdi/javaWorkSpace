@@ -1,0 +1,10 @@
+package hibernate;
+
+public class hibernateHandler 
+{
+	public persistByHibernate() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

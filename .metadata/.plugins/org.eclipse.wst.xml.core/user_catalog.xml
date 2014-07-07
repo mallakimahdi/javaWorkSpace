@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+  <public publicId="-//Hibernate/Hibernate Configuration DTD3.0//EN" uri="platform:/resource/myproject/dtds/hibernate-configuration-3.0.dtd"/>
+</catalog>

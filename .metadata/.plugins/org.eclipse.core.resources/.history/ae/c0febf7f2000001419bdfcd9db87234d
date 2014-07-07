@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "//UNKNOWN/" "unknown.dtd">
+
+
+<beans>	
+	
+	<bean id="myinjection" class="spring.testInjection">
+		<property name="name" value="mahdi"/>
+		<property name="tels">
+			<list>
+				<value>01</value>
+				<value>02</value>
+			</list>
+		</property>
+		<property name="dao" ref="mypersonalDao"></property>
+	</bean>    
+	
+	<bean id="mypersonalDao" class="spring.personelDao">
+		
+	</bean>    
+        
+</beans>

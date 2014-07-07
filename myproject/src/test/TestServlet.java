@@ -1,0 +1,71 @@
+package test;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class TestServlet
+ */
+public class TestServlet extends HttpServlet 
+{
+	private static final long serialVersionUID = 1L;
+
+    /**
+     * Default constructor. 
+     */
+    public TestServlet() 
+    {
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		doPost(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+	{
+		PrintWriter out = response.getWriter();
+		out.print("<html>");
+		out.print("<head><title>it is my first servlet </title></head>");
+		out.print("<body>hello world!");
+		
+		Map params = request.getParameterMap();
+		Set s = params.keySet();
+		Iterator iterate = s.iterator();
+		
+		while(iterate.hasNext())
+		{
+			String str = (String) iterate.next();
+			out.print("<br>paramter:"+str);
+			Object obj = (Object) params.get(str);
+			
+			//out.print(" value: "+ request.toString()(str));
+			
+		}
+		out.print("</body>");
+		out.print("</html>");
+		
+		
+		DAO dao = new DAO();
+		
+		structEntity struct = new structEntity();
+		struct.setId(2);
+		struct.setName("mahdi");
+		struct.setFamily("mallaki");
+		
+		dao.save(struct);
+	}
+
+}

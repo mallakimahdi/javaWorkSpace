@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/dtd/spring-beans-2.0.dtd">	
+	
+	<bean id="myinjection" class="spring.testInjection">
+		<property name="name" value="mahdi"/>
+		<property name="tels">
+			<list>
+				<value>01</value>
+				<value>02</value>
+			</list>
+		</property>
+		<property name="dao" ref="mypersonalDao"></property>
+	</bean>    
+	
+	<bean id="mypersonalDao" class="spring.personelDao">
+		
+	</bean>    
+        
+</beans>

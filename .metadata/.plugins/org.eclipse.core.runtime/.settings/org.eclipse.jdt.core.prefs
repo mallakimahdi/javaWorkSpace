@@ -6,3 +6,4 @@ org.eclipse.jdt.core.compiler.compliance=1.7
 org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
 org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
 org.eclipse.jdt.core.compiler.source=1.7
+org.eclipse.jdt.core.userLibrary.j=<?xml version\="1.0" encoding\="UTF-8"?>\n<userlibrary systemlibrary\="true" version\="2">\n\t<archive path\="/home/mahdi/Desktop/javax.faces-2.0.11.jar"/>\n</userlibrary>\n

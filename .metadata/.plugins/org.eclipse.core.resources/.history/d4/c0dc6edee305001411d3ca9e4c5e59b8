@@ -1,0 +1,19 @@
+package hibernate;
+
+import org.hibernate.classic.Session;
+
+public class hibernateHandler 
+{
+	private static final ThreadLocal session = new ThreadLocal<>();
+	
+	
+	public hibernateHandler() 
+	{
+		
+	}
+	
+	public static Session getSession()
+	{
+		Session session = new 
+	}
+}

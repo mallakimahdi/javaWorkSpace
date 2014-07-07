@@ -1,0 +1,13 @@
+package test;
+
+public class hiber 
+{
+	public hiber() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public void connect()
+	{
+		
+	}
+}

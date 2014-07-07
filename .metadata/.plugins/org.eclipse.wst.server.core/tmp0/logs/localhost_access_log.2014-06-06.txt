@@ -1,0 +1,4 @@
+127.0.0.1 - - [06/Jun/2014:08:47:40 +0430] "GET / HTTP/1.1" 404 951
+127.0.0.1 - - [06/Jun/2014:08:47:41 +0430] "GET /j/WEB-INF/classes/j/welcomeSOAP.java HTTP/1.1" 404 1023
+127.0.0.1 - - [06/Jun/2014:08:47:41 +0430] "GET /favicon.ico HTTP/1.1" 404 973
+127.0.0.1 - - [06/Jun/2014:08:48:40 +0430] "GET /j/WEB-INF/classes/j/welcomeSOAP.java?name=mahdi HTTP/1.1" 404 1023

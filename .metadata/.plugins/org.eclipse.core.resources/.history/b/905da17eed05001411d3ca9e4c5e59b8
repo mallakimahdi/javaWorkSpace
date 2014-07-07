@@ -1,0 +1,30 @@
+package hibernate;
+
+import org.hibernate.SessionFactory;
+import org.hibernate.cfg.Configuration;
+import org.hibernate.classic.Session;
+
+public class hibernateHandler 
+{
+	private static final ThreadLocal session = new ThreadLocal<>();
+	private static final ThreadLocal transaction = new ThreadLocal<>();
+	private static final SessionFactory sessionFactory = new Configuration().configure("my_config_hibernate.xml").buildSessionFactory();
+	
+	
+	public hibernateHandler() 
+	{
+	}
+	
+	public static Session getSession()
+	{
+		Session session = (Session) hibernateHandler.session.get();
+		
+		if(session == null)
+		{
+			session = sessionFactory.openSession();
+			hibernateHandler.session.set(session);
+		}
+		
+		return session;
+	}
+}

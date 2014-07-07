@@ -1,0 +1,62 @@
+package spring;
+
+import java.util.List;
+
+import org.springframework.beans.factory.InitializingBean;
+
+public class testInjection implements InitializingBean
+{
+	private String name;
+	private List tels;
+	private personelDao dao;
+	private List<personelDao> listdao;
+	private String desctiption;
+	
+	public List<personelDao> getListdao() {
+		return listdao;
+	}
+
+	public void setListdao(List<personelDao> listdao) {
+		this.listdao = listdao;
+	}
+
+	public personelDao getDao() {
+		return dao;
+	}
+
+	public void setDao(personelDao dao) {
+		this.dao = dao;
+	}
+	
+	public void savePersonel(Object obj)
+	{
+		this.dao.save(obj);
+	}
+
+	public List getTels() {
+		return tels;
+	}
+
+	public void setTels(List tels) {
+		this.tels = tels;
+	}
+
+	public testInjection() 
+	{
+		setName("mahdi");
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	@Override
+	public void afterPropertiesSet() throws Exception 
+	{
+		this.desctiption = name + "  " + tels;
+	}
+}
