@@ -28,6 +28,8 @@
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.InitializingBean"/>
 <fullyQualifiedTypeName name="spring.myDao"/>
-<fullyQualifiedTypeName name="org.hibernate.classic.Session"/>
 <fullyQualifiedTypeName name="org.hibernate.sql.ordering.antlr.Factory"/>
+<fullyQualifiedTypeName name="org.hibernate.classic.Session"/>
+<fullyQualifiedTypeName name="hibernate.hibernateHandler"/>
+<fullyQualifiedTypeName name="org.hibernate.HibernateException"/>
 </qualifiedTypeNameHistroy>
